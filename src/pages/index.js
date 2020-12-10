@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -11,7 +11,10 @@ import { Cursor } from './PageElements'
 const Home = () => {
 	const [top, setTop] = useState()
 	const [left, setLeft] = useState()
-	document.addEventListener('mousemove', cursor)
+
+	useEffect(() => {
+		window.addEventListener('mousemove', cursor)
+	}, [])
 
 	function cursor(event) {
 		setTop(event.pageY + 'px')

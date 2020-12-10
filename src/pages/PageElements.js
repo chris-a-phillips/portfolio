@@ -19,5 +19,5 @@ export const Cursor = styled.div.attrs(({ top, left }) => ({
 	pointer-events: none;
 	/* might be useful for cool image stuff */
 	/* z-index: -1; */
-	/* backdrop-filter: grayscale() */
+	backdrop-filter: hue-rotate(120deg)
 `;
