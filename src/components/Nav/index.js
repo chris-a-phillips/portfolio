@@ -1,18 +1,19 @@
 import React from 'react';
-import { NavUL, NavLI } from './NavElements'
+import { NavUL, NavLI, NavWrapper, NavLogo } from './NavElements'
 
 const Nav = () => {
     return (
-        <div>
-            Nav
+        <>
+        <NavWrapper>
+            <NavLogo>Nav</NavLogo>
             <NavUL>
-                <NavLI>logo or home button on the left</NavLI>
                 <NavLI>about</NavLI>
                 <NavLI>projects</NavLI>
                 <NavLI>contact</NavLI>
                 <NavLI>resume</NavLI>
             </NavUL>
-        </div>
+        </NavWrapper>
+        </>
     );
 };
 

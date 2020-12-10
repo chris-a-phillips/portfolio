@@ -11,4 +11,5 @@ export const cardTwo = {
 export const cardThree = {
     id: 'project-one',
     img: require('../../images/svg-3.svg').default,
+    
 }
