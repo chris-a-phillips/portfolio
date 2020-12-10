@@ -1,26 +1,20 @@
-import React, { useState } from 'react'
 import './App.css';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer'
-import Nav from './components/Nav'
-import Hero from './components/HeroSection'
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages';
+import Resume from './pages/resume';
+import { PageWrapper } from './pages/PageElements';
 
 function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-      <Resume />
-    </div>
-  );
+	return (
+		<Router>
+			<Switch>
+        <PageWrapper>
+          <Route path='/' exact component={Home} />
+          <Route path='/resume' exact component={Resume} />
+        </PageWrapper>
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;

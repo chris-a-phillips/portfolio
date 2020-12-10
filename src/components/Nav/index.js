@@ -1,16 +1,17 @@
 import React from 'react';
+import { NavUL, NavLI } from './NavElements'
 
 const Nav = () => {
     return (
         <div>
             Nav
-            <ul>
-                <li>logo or home button on the left</li>
-                <li>about</li>
-                <li>projects</li>
-                <li>contact</li>
-                <li>resume</li>
-            </ul>
+            <NavUL>
+                <NavLI>logo or home button on the left</NavLI>
+                <NavLI>about</NavLI>
+                <NavLI>projects</NavLI>
+                <NavLI>contact</NavLI>
+                <NavLI>resume</NavLI>
+            </NavUL>
         </div>
     );
 };
