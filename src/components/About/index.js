@@ -1,14 +1,15 @@
 import React from 'react';
+import { AboutPage } from './AboutElements';
 
 const About = () => {
     return (
-        <div>
+        <AboutPage>
             About
             <ul>
                 <li>stuff</li>
                 <li>technologies</li>
             </ul>
-        </div>
+        </AboutPage>
     );
 };
 

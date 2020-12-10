@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import './App.css';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer'
-import Nav from './components/Nav/Nav'
-import Hero from './components/HeroSection/Hero'
-import Projects from './components/Projects/Projects';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
+import Nav from './components/Nav'
+import Hero from './components/HeroSection'
+import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Resume />
     </div>
   );
 }
