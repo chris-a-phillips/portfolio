@@ -1,16 +1,30 @@
 import React from 'react';
+import Video from '../../videos/video.mp4'
+import { HeroBg, HeroContainer, HeroContent, HeroH1, HeroH2, HeroP, VideoBg } from './HeroElements';
 
 const Hero = () => {
     return (
-        <div>
-            Hero Section
-            <ul>
-                <li>big name</li>
-                <li>short sentence explanation of who i am</li>
-                <li>contact button smooth scroll to the bottom</li>
-            </ul>
-        </div>
-    );
+		<HeroContainer id='home'>
+			<HeroBg>
+				<VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+			</HeroBg>
+			<HeroContent>
+				<HeroH1>Chris Phillips</HeroH1>
+				<HeroH2>Full Stack Software Engineer</HeroH2>
+				<HeroP>
+					I am a software engineer based in the San Francisco Bay Area, specializing in producing dynamic and  powerful full stack applications.
+				</HeroP>
+			</HeroContent>
+		</HeroContainer>
+	);
 };
 
 export default Hero;
+{/* <div>
+    Hero Section
+    <ul>
+        <li>big name</li>
+        <li>short sentence explanation of who i am</li>
+        <li>contact button smooth scroll to the bottom</li>
+    </ul>
+</div> */}

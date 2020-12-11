@@ -21,5 +21,4 @@ export const NavUL = styled.ul`
 
 export const NavLI = styled.li`
     margin: 5px;
-    
 `
