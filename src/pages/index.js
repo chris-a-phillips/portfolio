@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 import Hero from '../components/HeroSection';
 import Projects from '../components/ProjectsSection';
 import Resume from '../components/Resume';
-import { Cursor } from './PageElements'
+import { Cursor, LandingWrapper } from './PageElements'
 
 const Home = () => {
 	const [top, setTop] = useState()
@@ -23,9 +23,11 @@ const Home = () => {
 
 	return (
 		<div>
-			<Cursor top={top} left={left}></Cursor>
+			<Cursor top={top} left={left}/>
+			<LandingWrapper>
 			<Nav />
 			<Hero />
+			</LandingWrapper>
 			<About />
 			<Projects />
 			<Contact />

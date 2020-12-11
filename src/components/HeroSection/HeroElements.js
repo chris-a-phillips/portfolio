@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
 	justify-content: left;
 	align-items: center;
 	padding: 0 30px;
-	height: 800px;
+	height: 90%;
 	position: relative;
 	z-index: 1;
 `;
@@ -40,7 +40,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-	margin-top: 40%;
+	margin-top: 35%;
 	color: #489fb5;
 	font-size: 4rem;
 	text-align: left;
@@ -73,9 +73,9 @@ filter: contrast(400%);
 `;
 
 export const HeroP = styled.p`
-	margin-top: 5rem;
+	margin-top: 3rem;
     color: #177e89;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-align: left;
     max-width: 600px;
     background-color: rgba(0,0,0,0.6);
@@ -83,10 +83,10 @@ export const HeroP = styled.p`
     
 
 	@media screen and (max-width: 768px) {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	@media screen and (max-width: 480px) {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 `;

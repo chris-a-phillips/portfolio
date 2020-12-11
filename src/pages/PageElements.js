@@ -18,5 +18,9 @@ export const Cursor = styled.div.attrs(({ top, left }) => ({
     transform: translate(-50%,-50%);
 	pointer-events: none;
 	z-index: 5;
-	backdrop-filter: hue-rotate(120deg)
+	backdrop-filter: hue-rotate(120deg);
 `;
+
+export const LandingWrapper = styled.div`
+	height: 100vh;
+`
