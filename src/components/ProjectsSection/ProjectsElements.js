@@ -1,5 +1,20 @@
 import styled from 'styled-components'
 
+export const ProjectsSectionWrapper = styled.div`
+    display: grid;
+    grid-template-columns: minmax(25%, 35%) 1fr;
+    height: 100vh;
+`
+
+export const Focuses = styled.div`
+    background-color: seagreen;
+    `
+
+export const CarouselWrapper = styled.div`
+background-color: lavenderblush;
+
+`
+
 export const CardContainer = styled.div`
 
 `

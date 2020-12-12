@@ -24,10 +24,8 @@ const Home = () => {
 	return (
 		<div>
 			<Cursor top={top} left={left}/>
-			<LandingWrapper>
 			<Nav />
 			<Hero />
-			</LandingWrapper>
 			<About />
 			<Projects />
 			<Contact />

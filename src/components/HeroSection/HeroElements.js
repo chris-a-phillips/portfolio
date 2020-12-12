@@ -5,7 +5,7 @@ export const HeroContainer = styled.div`
 	justify-content: left;
 	align-items: center;
 	padding: 0 30px;
-	height: 90%;
+	height: 100vh;
 	position: relative;
 	z-index: 1;
 `;
