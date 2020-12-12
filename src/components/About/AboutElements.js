@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px 5px;
     grid-template-areas:
-    ". . . . . ."
+    ". Head Head Head Head ."
     "Picture Picture . Blurb Blurb Blurb"
     "Picture Picture . Blurb Blurb Blurb"
     "NotFocuses NotFocuses . . . ."
@@ -16,6 +16,12 @@ export const AboutContainer = styled.div`
     "NotFocuses NotFocuses . . . .";
 }
 `;
+
+export const Head = styled.div`
+	grid-area: Head;
+    margin: 10%;
+    background-color: peachpuff;
+    `;
 
 export const Picture = styled.div`
 	grid-area: Picture;

@@ -1,13 +1,14 @@
 import React from 'react';
+import { FooterWrapper } from './FooterElements';
 
 const Footer = () => {
     return (
-        <div>
+        <FooterWrapper>
             Footer
             <ul>
                 <li>contact info</li>
             </ul>
-        </div>
+        </FooterWrapper>
     );
 };
 

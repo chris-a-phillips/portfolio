@@ -1,23 +1,19 @@
 import React from 'react';
-import { CarouselWrapper, Focuses, ProjectsSectionWrapper } from './ProjectsElements';
+import { CarouselData } from './CarouselData';
+import ProjectsCarousel from './ProjectsCarousel';
+import { CarouselWrapper, Focus, FocusesWrapper,  ProjectsSectionWrapper } from './ProjectsElements';
 
 const Projects = () => {
     return (
 		<ProjectsSectionWrapper>
-			<Focuses>focuses: effeciency, polish, </Focuses>
+			<FocusesWrapper>
+				<Focus>Effeciency</Focus>
+				<Focus>Polish</Focus>
+				<Focus>Focus 3</Focus>
+				<Focus>Focus 4</Focus>
+			</FocusesWrapper>
 			<CarouselWrapper>
-				<ul>
-					Showcase
-					<li>project 2</li>
-					<li>project 3</li>
-					<li>project 4</li>
-					Carousel
-					<li>
-						visual moving board (like a video; with little stuff
-						made throughout course; click it to open the page with
-						an animation like a curtain is opening)
-					</li>
-				</ul>
+				<ProjectsCarousel slides={CarouselData}/>
 			</CarouselWrapper>
 		</ProjectsSectionWrapper>
 	);

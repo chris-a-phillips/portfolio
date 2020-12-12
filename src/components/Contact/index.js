@@ -1,13 +1,14 @@
 import React from 'react';
+import { ContactWrapper } from './ContactElements';
 
 const Contact = () => {
     return (
-        <div>
+        <ContactWrapper>
             Contact Form
             <ul>
                 <li>preset form to capture information</li>
             </ul>
-        </div>
+        </ContactWrapper>
     );
 };
 

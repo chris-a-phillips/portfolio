@@ -1,10 +1,10 @@
 import React from 'react';
-import { AboutContainer, Blurb, NotFocuses, Picture, Technologies } from './AboutElements';
+import { AboutContainer, Blurb, Head, NotFocuses, Picture, Technologies } from './AboutElements';
 
 const About = () => {
     return (
 		<AboutContainer>
-			About
+            <Head>About</Head>
             <Picture>place image here</Picture>
 			<Blurb>
 				short blurb: I am a full stack software engineer with a passion
