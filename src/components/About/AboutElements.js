@@ -23,6 +23,8 @@ export const Head = styled.div`
 	grid-area: Head;
     margin: 10%;
     background-color: #f1faee;
+    font-size: 3rem;
+    margin-bottom: -10px;
     `;
 
 export const Picture = styled.div`
@@ -35,6 +37,7 @@ export const Blurb = styled.div`
 	grid-area: Blurb;
     margin: 10%;
     background-color: #457b9d;
+    font-size: 2rem;
     `;
 export const NotFocuses = styled.div`
 	grid-area: NotFocuses;

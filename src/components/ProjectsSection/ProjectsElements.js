@@ -13,12 +13,10 @@ export const FocusesWrapper = styled.div`
     justify-content: center;
     background-color: seagreen;
 `
-export const Focus = styled.div`
+export const FocusBox = styled.div`
     flex: 1 1 300px;
-    border: 2px solid black;
     text-align: center;
     margin: 10%;
-    background-color: lavender;
 `
 
 export const CarouselWrapper = styled.div`
@@ -61,8 +59,17 @@ export const CardLink = styled.button`
 
 `
 
+export const FocusH1 = styled.h1`
+    margin-top: 10px;
+    font-size: 2rem;
+`
+
 export const FocusImg = styled.img`
     align-self: center;
     width: 100px;
     height: 100px;
+`
+
+export const ProjectImg = styled.img`
+    width: 200px;
 `

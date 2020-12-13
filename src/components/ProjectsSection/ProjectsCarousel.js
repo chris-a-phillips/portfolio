@@ -1,5 +1,7 @@
 import { React } from 'react';
-import { CarouselWrapper } from './ProjectsElements';
+import { CarouselWrapper, ProjectImg } from './ProjectsElements';
+import gitwrap from '../../images/gitwrap.gif'
+import relocateMe from '../../images/relocate-me.gif'
 
 
 const ProjectsCarousel = ({ slides }) => {
@@ -18,6 +20,8 @@ const ProjectsCarousel = ({ slides }) => {
                     animation like a curtain is opening)
                 </li>
             </ul>
+            <ProjectImg src={gitwrap} alt={'Gitwrap Website GIF'}/>
+            <ProjectImg src={relocateMe} alt={'Relocate Me Website GIF'}/>
 		</CarouselWrapper>
 	);
 };
