@@ -1,24 +1,21 @@
-import React, { useState } from 'react'
 import './App.css';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer'
-import Nav from './components/Nav/Nav'
-import Hero from './components/HeroSection/Hero'
-import Projects from './components/Projects/Projects';
-
+import { React } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages';
+import Resume from './pages/resume';
+import { PageWrapper } from './pages/PageElements';
 
 function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-  );
+	return (
+		<Router>
+			<Switch>
+				<PageWrapper>
+					<Route path='/' exact component={Home} />
+					<Route path='/resume' exact component={Resume} />
+				</PageWrapper>
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
