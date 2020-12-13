@@ -60,3 +60,9 @@ export const LinkWrapper = styled.div`
 export const CardLink = styled.button`
 
 `
+
+export const FocusImg = styled.img`
+    align-self: center;
+    width: 100px;
+    height: 100px;
+`

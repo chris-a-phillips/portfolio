@@ -1,21 +1,37 @@
 import React from 'react';
-import { AboutContainer, Blurb, Head, NotFocuses, Picture, Technologies } from './AboutElements';
+import { AboutContainer, Blurb, Head, HeadShot, Logo, NotFocuses, Picture, Technologies } from './AboutElements';
+import headShot from '../../images/headshot.jpeg'
+import bootstrap from '../../images/logos/bootstrap-logo.svg'
+import django from '../../images/logos/django-logo.png'
+import javascript from '../../images/logos/javascript-logo.svg'
+import mongoose from '../../images/logos/mongoose-logo.png'
+import nodeExpress from '../../images/logos/node-express-logo.jpeg'
+import postgresql from '../../images/logos/postgresql-logo.svg'
+import python from '../../images/logos/python-logo.svg'
+import react from '../../images/logos/react-logo.PNG'
+
 
 const About = () => {
     return (
 		<AboutContainer>
-            <Head>About</Head>
-            <Picture>place image here</Picture>
+            <Head>Looking to make a difference with technology</Head>
+            <Picture><HeadShot src={headShot}/></Picture>
 			<Blurb>
-				short blurb: I am a full stack software engineer with a passion
+				I am a full stack software engineer with a passion
 				for bringing people together through technology. I build
 				applications with the end user experience as my focus. With my
 				knowledge of various technologies, I can build
 			</Blurb>
             <NotFocuses>NotFocuses put something else here</NotFocuses>
             <Technologies>
-					technologies scroll: html, css, javascript, python,
-					postgresql, mongodb, express, react, django, node.js
+					<Logo src={bootstrap} alt={'bootstrap logo'}/>
+					<Logo src={django} alt={'django logo'}/>
+					<Logo src={javascript} alt={'javascript logo'}/>
+					<Logo src={mongoose} alt={'mongoose logo'}/>
+					<Logo src={nodeExpress} alt={'node express logo'}/>
+					<Logo src={postgresql} alt={'postgresql logo'}/>
+					<Logo src={python} alt={'python logo'}/>
+					<Logo src={react} alt={'react logo'}/>
             </Technologies>
 		</AboutContainer>
 	);

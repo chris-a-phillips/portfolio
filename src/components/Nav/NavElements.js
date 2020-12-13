@@ -60,10 +60,11 @@ export const MobileIcon = styled.div`
 		cursor: none;
 		color: #fff;
 		width: 25px;
+		z-index: 3;
 
 		&:hover {
 			transition: 0.5s linear;
-			transform: scale(1.5);
+			/* transform: scale(1.5); */
 		}
 	}
 	`;

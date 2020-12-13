@@ -1,3 +1,4 @@
+// import { logDOM } from '@testing-library/react';
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
@@ -41,46 +42,45 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
 	margin-top: 35%;
-	color: #489fb5;
+	color: #e76f51;
 	font-size: 4rem;
 	text-align: left;
 	border-radius: 100%;
-	filter: contrast(400%);
+	/* filter: contrast(400%); */
 	/* filter: drop-shadow(16px 16px 20px red) invert(75%); */
-    
+
 	@media screen and (max-width: 768px) {
-        font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
-    
+
 	@media screen and (max-width: 480px) {
-        font-size: 3rem;
+		font-size: 3rem;
 	}
-    `;
+`;
 
 export const HeroH2 = styled.h2`
-color: #489fb5;
-font-size: 3rem;
-text-align: left;
-filter: contrast(400%);
+	color: #e76f51;
+	font-size: 3rem;
+	text-align: left;
+	/* filter: contrast(400%); */
 
-@media screen and (max-width: 768px) {
-    font-size: 2.5rem;
-}
+	@media screen and (max-width: 768px) {
+		font-size: 2.5rem;
+	}
 
-@media screen and (max-width: 480px) {
-    font-size: 2rem;
-}
+	@media screen and (max-width: 480px) {
+		font-size: 2rem;
+	}
 `;
 
 export const HeroP = styled.p`
 	margin-top: 3rem;
-    color: #177e89;
+	color: #2a9d8f;
 	font-size: 2rem;
 	text-align: left;
-    max-width: 600px;
-    background-color: rgba(0,0,0,0.6);
-    filter: contrast(400%);
-    
+	max-width: 600px;
+	background-color: rgba(0, 0, 0, 0.6);
+	/* filter: contrast(400%); */
 
 	@media screen and (max-width: 768px) {
 		font-size: 1.5rem;
