@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `
 
 export const FooterWrap = styled.div`
-    padding: 48px 24px;
+    padding: 28px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,12 +28,12 @@ export const FooterLinksContainer = styled.div`
 export const SocialLogo = styled(Link)`
     color: #fff;
     justify-self: start;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     font-size: 2rem;
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     font-weight: bold;
 `
 
@@ -47,4 +47,5 @@ width: 240px;
 export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 4rem;
+    cursor: none;
 `

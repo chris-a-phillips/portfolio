@@ -7,6 +7,7 @@ import Projects from '../components/ProjectsSection';
 import Sidebar from '../components/Sidebar'
 import Resume from '../components/Resume';
 import { Cursor } from './PageElements'
+import Contact from '../components/Contact';
 
 const Home = () => {
 	const [top, setTop] = useState()
@@ -34,6 +35,7 @@ const Home = () => {
 			<Hero />
 			<About />
 			<Projects />
+			<Contact />
 			<Footer />
 			<Resume />
 		</div>

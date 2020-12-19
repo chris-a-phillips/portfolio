@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutContainer, Blurb, Head, HeadShot, Logo, NotFocuses, Picture, Technologies } from './AboutElements';
+import { AboutContainer, Blurb, Head, HeadShot, Logo, LogoBox, Picture, Technologies } from './AboutElements';
 import headShot from '../../images/headshot.jpeg'
 import bootstrap from '../../images/logos/bootstrap-logo.svg'
 import django from '../../images/logos/django-logo.png'
@@ -13,7 +13,7 @@ import react from '../../images/logos/react-logo.PNG'
 
 const About = () => {
     return (
-		<AboutContainer>
+		<AboutContainer id={'about'}>
             <Head>Looking to make a difference with technology</Head>
             <Picture><HeadShot src={headShot}/></Picture>
 			<Blurb>
@@ -22,8 +22,8 @@ const About = () => {
 				applications with the end user experience as my focus. With my
 				knowledge of various technologies, I can build
 			</Blurb>
-            <NotFocuses>NotFocuses put something else here</NotFocuses>
             <Technologies>
+				<LogoBox>
 					<Logo src={bootstrap} alt={'bootstrap logo'}/>
 					<Logo src={django} alt={'django logo'}/>
 					<Logo src={javascript} alt={'javascript logo'}/>
@@ -31,7 +31,8 @@ const About = () => {
 					<Logo src={nodeExpress} alt={'node express logo'}/>
 					<Logo src={postgresql} alt={'postgresql logo'}/>
 					<Logo src={python} alt={'python logo'}/>
-					<Logo src={react} alt={'react logo'}/>
+				<Logo src={react} alt={'react logo'}/>
+				</LogoBox>
             </Technologies>
 		</AboutContainer>
 	);

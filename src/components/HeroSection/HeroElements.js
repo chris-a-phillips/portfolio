@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
 	justify-content: left;
 	align-items: center;
 	padding: 0 30px;
-	height: 100vh;
+	height: 800px;
 	position: relative;
 	z-index: 1;
 `;
@@ -31,7 +31,7 @@ export const VideoBg = styled.video`
 `;
 
 export const HeroContent = styled.div`
-	z-index: 3;
+	z-index: 2;
 	max-width: 1200px;
 	position: absolute;
 	padding: 8px 24px;
@@ -42,10 +42,11 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
 	margin-top: 35%;
-	color: #e76f51;
+	color: #82c0cc;
 	font-size: 4rem;
 	text-align: left;
-	border-radius: 100%;
+	/* border-radius: 100%; */
+	background-color: rgba(0,0,0, 0.5);
 	/* filter: contrast(400%); */
 	/* filter: drop-shadow(16px 16px 20px red) invert(75%); */
 
@@ -59,7 +60,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroH2 = styled.h2`
-	color: #e76f51;
+	color: #cc92c2;
 	font-size: 3rem;
 	text-align: left;
 	/* filter: contrast(400%); */

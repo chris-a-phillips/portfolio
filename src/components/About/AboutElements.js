@@ -3,29 +3,46 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
     background-color: #1d3557;
-    height: 100vh;
+    height: 860px;
+    width: 100%;
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px 5px;
     grid-template-areas:
-    ". Head Head Head Head ."
+    "Head Head Head Blurb Blurb Blurb"
     "Picture Picture . Blurb Blurb Blurb"
     "Picture Picture . Blurb Blurb Blurb"
-    "NotFocuses NotFocuses . . . ."
-    "NotFocuses NotFocuses . Technologies Technologies Technologies"
-    "NotFocuses NotFocuses . . . .";
+    "Technologies Technologies Technologies Technologies Technologies Technologies"
+    "Technologies Technologies Technologies Technologies Technologies Technologies"
+    "Technologies Technologies Technologies Technologies Technologies Technologies";
+    font-size: 2rem;
+
+        @media screen and (max-width: 768px) {
+		font-size: 1.5rem;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 1rem;
+	}
 }
 `;
 
 export const Head = styled.div`
 	grid-area: Head;
-    margin: 10%;
-    background-color: #f1faee;
-    font-size: 3rem;
-    margin-bottom: -10px;
-    `;
+	margin: 10%;
+	background-color: #f1faee;
+	font-size: 2.5rem;
+
+	@media screen and (max-width: 768px) {
+		font-size: 2rem;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 1.5rem;
+	}
+`;
 
 export const Picture = styled.div`
 	grid-area: Picture;
@@ -37,27 +54,31 @@ export const Blurb = styled.div`
 	grid-area: Blurb;
     margin: 10%;
     background-color: #457b9d;
-    font-size: 2rem;
     `;
-export const NotFocuses = styled.div`
-	grid-area: NotFocuses;
-    margin: 10%;
-    background-color: #e63946;
-    `;
-
-export const Technologies = styled.div`
-	grid-area: Technologies;
-	margin: 10%;
-	background-color: peachpuff;
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-`;
 
 export const HeadShot = styled.img`
-    width: 125%;
-`
+	width: 70%;
+`;
 
 export const Logo = styled.img`
     width: 95px;
+    margin: 20px;
+    transition: all 0.5s ease;
+
+    :hover {
+        transform: scale(1.5);
+    }
 `
+
+export const Technologies = styled.div`
+	grid-area: Technologies;
+	margin: auto 20px;
+	width: 100%;
+    height: 90%;
+	margin: 50px auto;
+    border-radius: 25px;
+`;
+
+
+export const LogoBox = styled.div`
+`;

@@ -2,6 +2,7 @@ import { React } from 'react';
 import { CarouselWrapper, ProjectImg } from './ProjectsElements';
 import gitwrap from '../../images/gitwrap.gif'
 import relocateMe from '../../images/relocate-me.gif'
+import humanPrinciple from '../../images/human-principle.gif'
 
 
 const ProjectsCarousel = ({ slides }) => {
@@ -22,6 +23,7 @@ const ProjectsCarousel = ({ slides }) => {
             </ul>
             <ProjectImg src={gitwrap} alt={'Gitwrap Website GIF'}/>
             <ProjectImg src={relocateMe} alt={'Relocate Me Website GIF'}/>
+            <ProjectImg src={humanPrinciple} alt={'Human Principle Website GIF'}/>
 		</CarouselWrapper>
 	);
 };

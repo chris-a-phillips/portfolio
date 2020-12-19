@@ -1,7 +1,7 @@
 import React from 'react';
 import { CarouselData } from './CarouselData';
 import ProjectsCarousel from './ProjectsCarousel';
-import { CarouselWrapper, FocusImg, FocusBox, FocusesWrapper,  ProjectsSectionWrapper, FocusH1 } from './ProjectsElements';
+import { FocusImg, FocusBox, FocusesWrapper,  ProjectsSectionWrapper, FocusH1 } from './ProjectsElements';
 import efficiency from '../../images/efficiency.svg'
 import flexibility from '../../images/flexibility.svg'
 import detail from '../../images/detail.svg'
@@ -9,7 +9,10 @@ import creativity from '../../images/creativity.svg'
 
 const Projects = () => {
     return (
-		<ProjectsSectionWrapper>
+		<ProjectsSectionWrapper id='projects'>
+			<ProjectsCarousel>
+				<ProjectsCarousel slides={CarouselData}/>
+			</ProjectsCarousel>
 			<FocusesWrapper>
 				<FocusBox>
 					<FocusImg src={efficiency}/>
@@ -28,9 +31,6 @@ const Projects = () => {
 					<FocusH1>Creativity</FocusH1>
 				</FocusBox>
 			</FocusesWrapper>
-			<CarouselWrapper>
-				<ProjectsCarousel slides={CarouselData}/>
-			</CarouselWrapper>
 		</ProjectsSectionWrapper>
 	);
 };

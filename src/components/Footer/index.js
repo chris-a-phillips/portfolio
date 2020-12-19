@@ -7,7 +7,7 @@ import {
 	SocialLogo,
 	SocialIconLink,
 	FooterContainer, 
-	SocialIcons
+	SocialIcons,
 } from './FooterElements';
 
 
@@ -17,7 +17,7 @@ const Footer = () => {
 	};
 
 	return (
-		<FooterContainer>
+		<FooterContainer id='contact'>
 			<FooterWrap>
 				<SocialLogo to='/' onClick={toggleHome}>
 					Chris Phillips

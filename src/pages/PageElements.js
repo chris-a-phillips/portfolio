@@ -27,9 +27,3 @@ export const Cursor = styled.div.attrs(({ top, left }) => ({
 	z-index: 5;
 	backdrop-filter: hue-rotate(120deg);
 `;
-
-// export const FormFooterWrapper = styled.div`
-// 	display: grid;
-// 	grid-template-rows: 1fr minmax(15%, 25%);
-// 	height: 100vh;
-// `;

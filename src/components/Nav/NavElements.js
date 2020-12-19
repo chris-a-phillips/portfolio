@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 	font-size: 1rem;
 	position: sticky;
 	top: 0;
-	z-index: 4;
+	z-index: 3;
 
 	@media screen and (max-width: 960px) {
 		transition: 0.8s all ease;
@@ -60,7 +60,7 @@ export const MobileIcon = styled.div`
 		cursor: none;
 		color: #fff;
 		width: 25px;
-		z-index: 3;
+		z-index: 2;
 
 		&:hover {
 			transition: 0.5s linear;
