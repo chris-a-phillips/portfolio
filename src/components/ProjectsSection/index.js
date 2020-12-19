@@ -1,5 +1,5 @@
 import React from 'react';
-import { CarouselData } from './CarouselData';
+// import { CarouselData } from './CarouselData';
 import ProjectsCarousel from './ProjectsCarousel';
 import { FocusImg, FocusBox, FocusesWrapper,  ProjectsSectionWrapper, FocusH1 } from './ProjectsElements';
 import efficiency from '../../images/efficiency.svg'
@@ -11,7 +11,7 @@ const Projects = () => {
     return (
 		<ProjectsSectionWrapper id='projects'>
 			<ProjectsCarousel>
-				<ProjectsCarousel slides={CarouselData}/>
+				{/* <ProjectsCarousel slides={CarouselData}/> */}
 			</ProjectsCarousel>
 			<FocusesWrapper>
 				<FocusBox>

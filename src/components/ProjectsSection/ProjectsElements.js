@@ -29,26 +29,42 @@ export const CarouselWrapper = styled.div`
     background-color: lavender;
 `
 
-export const Card = styled.div`
+export const CardContainer = styled.div`
+    background-color: gray;
+    height: 600px;
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+`
 
-    :active;
+export const Card = styled.div`
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    padding: 10px;
+    /* :active; */
 `;
 
 export const CardImg = styled.img`
+    padding: 20px;
     width: 80%;
-    height: 80%;
-    border-radius: 10%;
+    height: 60%;
+    background-color: red;
 `
 
-export const CardInfo = styled.div`
-
+export const CardCaption = styled.h3`
+    padding: 10px;
 `
 
 export const CardTitle = styled.h1`
+    padding: 10px;
 
 `
 
-export const CardDescription = styled.h3`
+export const CardDescription = styled.p`
 
 `
 
@@ -56,7 +72,7 @@ export const LinkWrapper = styled.div`
 
 `
 
-export const CardLink = styled.button`
+export const CardLink = styled.a`
 
 `
 

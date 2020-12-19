@@ -7,9 +7,11 @@ const Contact = () => {
 			<ContactH1>Contact Me</ContactH1>
 			<ContactH3>
 				I'm always looking for new opportunities and ways to
-				collaborate. Whether it's just a casual hello, a question, or
+				collaborate. <br/>
+                Whether it's just a casual hello, a question, or
 				anything else, I'll make sure to get back to you.
 			</ContactH3>
+            <ContactH3></ContactH3>
 			<ContactA
 				href='mailto:phillipsachris@gmail.com?
                 &subject=Hello%20from

@@ -20,7 +20,7 @@ const About = () => {
 				I am a full stack software engineer with a passion
 				for bringing people together through technology. I build
 				applications with the end user experience as my focus. With my
-				knowledge of various technologies, I can build
+				knowledge of various technologies, I can build applications for a wide range of users.
 			</Blurb>
             <Technologies>
 				<LogoBox>
