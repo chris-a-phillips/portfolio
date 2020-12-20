@@ -1,23 +1,10 @@
 import styled from 'styled-components'
 
-
 export const ProjectsSectionWrapper = styled.div`
     display: grid;
     grid-template-columns: minmax(65%, 75%) 1fr;
     height: 860px;
     width: 100%;
-`
-
-export const FocusesWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: seagreen;
-`
-export const FocusBox = styled.div`
-    flex: 1 1 300px;
-    text-align: center;
-    margin: 10%;
 `
 
 export const CarouselWrapper = styled.div`
@@ -55,26 +42,36 @@ export const CardImg = styled.img`
     background-color: red;
 `
 
-export const CardCaption = styled.h3`
-    padding: 10px;
+export const CardTitle = styled.h1`
+    /* padding: 10px; */
+    border: solid black 5px;
 `
 
-export const CardTitle = styled.h1`
-    padding: 10px;
-
+export const CardCaption = styled.h3`
+    margin: 5%;
 `
 
 export const CardDescription = styled.p`
-
-`
-
-export const LinkWrapper = styled.div`
-
+    margin: 5%;
 `
 
 export const CardLink = styled.a`
-
+    margin: 5%;
 `
+
+// FOCUSES
+
+export const FocusesWrapper = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: seagreen;
+`;
+export const FocusBox = styled.div`
+	flex: 1 1 300px;
+	text-align: center;
+	margin: 10%;
+`;
 
 export const FocusH1 = styled.h1`
     margin-top: 10px;
