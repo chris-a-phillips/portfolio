@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContactA, ContactH1, ContactH3, ContactWrapper } from './ContactElements';
 
+
 const Contact = () => {
     return (
 		<ContactWrapper>

@@ -6,13 +6,13 @@ import efficiency from '../../images/efficiency.svg'
 import flexibility from '../../images/flexibility.svg'
 import detail from '../../images/detail.svg'
 import creativity from '../../images/creativity.svg'
+import { showcase } from './CarouselData';
+
 
 const Projects = () => {
     return (
 		<ProjectsSectionWrapper id='projects'>
-			<ProjectsCarousel>
-				{/* <ProjectsCarousel slides={CarouselData}/> */}
-			</ProjectsCarousel>
+			<ProjectsCarousel showcase={showcase}/>
 			<FocusesWrapper>
 				<FocusBox>
 					<FocusImg src={efficiency}/>

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { TiArrowLeftOutline, TiArrowRightOutline } from 'react-icons/ti';
+
 
 export const ProjectsSectionWrapper = styled.div`
     display: grid;
@@ -43,12 +45,13 @@ export const CardImg = styled.img`
 `
 
 export const CardTitle = styled.h1`
-    /* padding: 10px; */
     border: solid black 5px;
 `
 
 export const CardCaption = styled.h3`
     margin: 5%;
+    font-weight: 100;
+    font-size: 0.75rem;
 `
 
 export const CardDescription = styled.p`
@@ -67,6 +70,7 @@ export const FocusesWrapper = styled.div`
 	justify-content: center;
 	background-color: seagreen;
 `;
+
 export const FocusBox = styled.div`
 	flex: 1 1 300px;
 	text-align: center;
@@ -96,3 +100,21 @@ export const FocusImg = styled.img`
 export const ProjectImg = styled.img`
     width: 200px;
 `
+
+export const ArrowLeft = styled(TiArrowLeftOutline)`
+	margin: 0 10px;
+    font-size: 100px;
+
+    :hover {
+        fill: orange;
+    }
+`;
+
+export const ArrowRight = styled(TiArrowRightOutline)`
+	margin: 0 10px;
+	font-size: 100px;
+
+    :hover {
+        fill: orange;
+    }
+`;

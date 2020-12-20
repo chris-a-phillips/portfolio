@@ -1,80 +1,45 @@
 import { React, useState } from 'react';
-import { Card, CardCaption, CardLink,CardDescription, CardTitle, CarouselWrapper, CardContainer, CardImg, CardContent } from './ProjectsElements';
-import gitWrap from '../../images/gitwrap.gif'
-import relocateMe from '../../images/relocate-me.gif'
-import humanPrinciple from '../../images/human-principle.gif'
+import { Card, CardCaption, CardLink,CardDescription, CardTitle, CarouselWrapper, CardContainer, CardImg } from './ProjectsElements';
+import { ArrowLeft, ArrowRight } from './ProjectsElements'
 
+const ProjectsCarousel = ({ showcase }) => {
+    const [count, setCount] = useState(0)
 
-const ProjectsCarousel = ({ showcaseProject }) => {
-    const [project, setProject] = useState('')
-    // const projectOne = () => {
-    //     setProject('');
-    // };
+    const nextProject = () => {
+        if (count === (showcase.length - 1)) {
+            setCount(0)
+        } else {
+            setCount(count + 1);
+        }
+    };
+    
+    const prevProject = () => {
+        if (count === 0) {
+            setCount(showcase.length - 1)
+        } else {
+            setCount(count -1)
+        }
+	};
 
-    // const projectTwo = () => {
-    //     setProject('');
-    // };
-
-    // const projectThree = () => {
-    //     setProject('');
-    // };
 
 	return (
 		<CarouselWrapper>
-
+            <ArrowLeft onClick={prevProject}>Previous</ArrowLeft>
 			<CardContainer>
 				<Card>
-					<CardImg src={gitWrap}></CardImg>
-					<CardTitle>title</CardTitle>
-					<CardCaption>caption</CardCaption>
-					<CardDescription>description</CardDescription>
-					<CardLink>link</CardLink>
+					<CardImg
+						src={showcase[count].img}
+						alt={showcase[count].alt}></CardImg>
+					<CardTitle>{showcase[count].title}</CardTitle>
+					<CardDescription>
+						{showcase[count].description}
+					</CardDescription>
+					<CardCaption>{showcase[count].caption}</CardCaption>
+					<CardLink href={`${showcase[count].link}`}>Github Link
+					</CardLink>
 				</Card>
 			</CardContainer>
-{/* 
-			<CardContainer>
-				<Card>
-					<CardImg src={relocateMe}></CardImg>
-					<CardTitle>title</CardTitle>
-					<CardCaption>caption</CardCaption>
-					<CardDescription>description</CardDescription>
-					<CardLink>link</CardLink>
-				</Card>
-			</CardContainer>
-
-			<CardContainer>
-				<Card>
-					<CardImg src={humanPrinciple}></CardImg>
-					<CardTitle>title</CardTitle>
-					<CardCaption>caption</CardCaption>
-					<CardDescription>description</CardDescription>
-					<CardLink>link</CardLink>
-				</Card>
-			</CardContainer> */}
-			{/* {formType === 'Mental' ? (
-				<QuestionForm
-					user={user}
-					token={token}
-					{...mentalTemplate}
-					formType={formType}
-				/>
-			) : null}
-			{formType === 'Physical' ? (
-				<QuestionForm
-					user={user}
-					token={token}
-					{...physicalTemplate}
-					formType={formType}
-				/>
-			) : null}
-			{formType === 'Emotional' ? (
-				<QuestionForm
-					user={user}
-					token={token}
-					{...emotionalTemplate}
-					formType={formType}
-				/>
-			) : null} */}
+            <ArrowRight onClick={nextProject}>Next</ArrowRight>
 		</CarouselWrapper>
 	);
 };
