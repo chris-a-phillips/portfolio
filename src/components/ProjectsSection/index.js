@@ -1,21 +1,49 @@
 import React from 'react';
-import { CarouselData } from './CarouselData';
 import ProjectsCarousel from './ProjectsCarousel';
-import { CarouselWrapper, Focus, FocusesWrapper,  ProjectsSectionWrapper } from './ProjectsElements';
+import {
+	FocusImg,
+	FocusBox,
+	FocusesBg,
+	FocusesWrapper,
+	ProjectsBg,
+	ProjectsSectionWrapper,
+	FocusH1,
+} from './ProjectsElements';
+import efficiency from '../../images/focus-svgs/efficiency.svg';
+import flexibility from '../../images/focus-svgs/flexibility.svg';
+import detail from '../../images/focus-svgs/detail.svg';
+import creativity from '../../images/focus-svgs/creativity.svg';
+import { showcase } from './CarouselData';
+import { ParallaxSeparator } from '../../pages/PageElements';
 
 const Projects = () => {
-    return (
-		<ProjectsSectionWrapper>
-			<FocusesWrapper>
-				<Focus>Effeciency</Focus>
-				<Focus>Polish</Focus>
-				<Focus>Focus 3</Focus>
-				<Focus>Focus 4</Focus>
-			</FocusesWrapper>
-			<CarouselWrapper>
-				<ProjectsCarousel slides={CarouselData}/>
-			</CarouselWrapper>
-		</ProjectsSectionWrapper>
+	return (
+		<ProjectsBg>
+			<ProjectsSectionWrapper id='projects'>
+				<ProjectsCarousel showcase={showcase} />
+				<FocusesBg>
+					<FocusesWrapper>
+						<FocusBox>
+							<FocusImg src={efficiency} />
+							<FocusH1>Efficiency</FocusH1>
+						</FocusBox>
+						<FocusBox>
+							<FocusImg src={flexibility} />
+							<FocusH1>Flexibility</FocusH1>
+						</FocusBox>
+						<FocusBox>
+							<FocusImg src={detail} />
+							<FocusH1>Attention To Detail</FocusH1>
+						</FocusBox>
+						<FocusBox>
+							<FocusImg src={creativity} />
+							<FocusH1>Creativity</FocusH1>
+						</FocusBox>
+					</FocusesWrapper>
+				</FocusesBg>
+			</ProjectsSectionWrapper>
+			<ParallaxSeparator />
+		</ProjectsBg>
 	);
 };
 

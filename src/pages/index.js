@@ -1,16 +1,22 @@
 import { React, useState, useEffect } from 'react';
 import About from '../components/About';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import Hero from '../components/HeroSection';
 import Projects from '../components/ProjectsSection';
+import Sidebar from '../components/Sidebar'
 import Resume from '../components/Resume';
-import { Cursor, FormFooterWrapper, LandingWrapper } from './PageElements'
+import { Cursor } from './PageElements'
+import Contact from '../components/Contact';
 
 const Home = () => {
 	const [top, setTop] = useState()
 	const [left, setLeft] = useState()
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
 
 	useEffect(() => {
 		window.addEventListener('mousemove', cursor)
@@ -23,15 +29,14 @@ const Home = () => {
 
 	return (
 		<div>
-			<Cursor top={top} left={left}/>
-			<Nav />
+			<Sidebar isOpen={isOpen} toggle={toggle} />
+			<Cursor top={top} left={left} />
+			<Nav toggle={toggle} />
 			<Hero />
 			<About />
 			<Projects />
-			<FormFooterWrapper>
-				<Contact />
-				<Footer />
-			</FormFooterWrapper>
+			<Contact />
+			<Footer />
 			<Resume />
 		</div>
 	);

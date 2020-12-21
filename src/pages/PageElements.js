@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
+
 export const PageWrapper = styled.div`
 	cursor: none;
-`
+`;
+
 
 export const Cursor = styled.div.attrs(({ top, left }) => ({
 	style: {
@@ -21,8 +23,9 @@ export const Cursor = styled.div.attrs(({ top, left }) => ({
 	backdrop-filter: hue-rotate(120deg);
 `;
 
-export const FormFooterWrapper = styled.div`
-	display: grid;
-	grid-template-rows: 1fr minmax(15%, 25%);
-	height: 100vh;
+export const ParallaxSeparator = styled.div`
+	width: 100%;
+	height: 30px;
+	background-color: #000;
+	color: white;
 `;
