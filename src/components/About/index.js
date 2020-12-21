@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutBg, AboutContainer, Blurb, Head, HeadShot, Logo, LogoBox, Picture, Technologies } from './AboutElements';
+import { AboutBg, AboutContainer, Blurb, Head, HeadShot, Logo, LogoBox, Logos, Picture, Technologies } from './AboutElements';
 import headShot from '../../images/headshot.jpeg'
 import bootstrap from '../../images/logos/bootstrap-logo.svg'
 import django from '../../images/logos/django-logo.png'
@@ -16,7 +16,7 @@ const About = () => {
     return (
 		<AboutBg>
 			<AboutContainer id={'about'}>
-				<Head>Looking to make a difference with technology</Head>
+				<Head>WORKING TO MAKE A DIFFERENCE WITH TECHNOLOGY</Head>
 				<Picture>
 					<HeadShot src={headShot} />
 				</Picture>
@@ -28,16 +28,32 @@ const About = () => {
 					applications for a wide range of users.
 				</Blurb>
 				<Technologies>
-					<LogoBox>
-						<Logo src={bootstrap} alt={'bootstrap logo'} />
-						<Logo src={django} alt={'django logo'} />
-						<Logo src={javascript} alt={'javascript logo'} />
-						<Logo src={mongoose} alt={'mongoose logo'} />
-						<Logo src={nodeExpress} alt={'node express logo'} />
-						<Logo src={postgresql} alt={'postgresql logo'} />
-						<Logo src={python} alt={'python logo'} />
-						<Logo src={react} alt={'react logo'} />
-					</LogoBox>
+					<Logos>
+						<LogoBox>
+							<Logo src={bootstrap} alt={'bootstrap logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={django} alt={'django logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={javascript} alt={'javascript logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={mongoose} alt={'mongoose logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={nodeExpress} alt={'node express logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={postgresql} alt={'postgresql logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={python} alt={'python logo'} />
+						</LogoBox>
+						<LogoBox>
+							<Logo src={react} alt={'react logo'} />
+						</LogoBox>
+					</Logos>
 				</Technologies>
 			</AboutContainer>
 			<ParallaxSeparator />

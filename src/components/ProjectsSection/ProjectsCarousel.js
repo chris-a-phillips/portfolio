@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { Card, CardCaption, CardLink,CardDescription, CardTitle, CarouselWrapper, CardContainer, CardImg, GithubIcon, WebsiteIcon, SocialIconLink, SocialIcons } from './ProjectsElements';
+import { Card, CardCaption,CardDescription, CardTitle, CarouselWrapper, CardContainer, CardImg, GithubIcon, WebsiteIcon, SocialIconLink, SocialIcons } from './ProjectsElements';
 import { ArrowLeft, ArrowRight } from './ProjectsElements'
 
 const ProjectsCarousel = ({ showcase }) => {

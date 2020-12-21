@@ -40,9 +40,9 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-border-radius: 15px;
-	height: 90%;
-	width: 90%;
+border-radius: 10px;
+	height: 100%;
+	width: 100%;
 	padding: 10px;
 	/* :active; */
 	background-image: url(${vortex});
@@ -62,7 +62,7 @@ export const CardImg = styled.img`
 export const CardTitle = styled.h1`
 	border: solid white 5px;
 	border-radius: 5px;
-	color: white;
+	color: #fff;
 `;
 
 export const CardCaption = styled.h3`
@@ -70,11 +70,13 @@ export const CardCaption = styled.h3`
 	font-weight: 100;
 	font-size: 0.75rem;
 	color: #1bcef7;
+	filter: contrast(400%);
 `;
 
 export const CardDescription = styled.p`
 	margin: 5%;
 	color: #1bcef7;
+	filter: contrast(400%);
 `;
 
 export const LinksWrapper = styled.div``
@@ -180,7 +182,7 @@ export const GithubIcon = styled(VscGithub)`
 	fill: #1aeddc;
 
 	:hover {
-		fill: orange;
+		fill: #ff0000;
 	}
 `;
 
@@ -190,7 +192,7 @@ export const WebsiteIcon = styled(GiWireframeGlobe)`
 	fill: #1aeddc;
 
 	:hover {
-		fill: orange;
+		fill: #ff0000;
 	}
 `;
 
