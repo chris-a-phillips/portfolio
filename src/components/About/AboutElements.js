@@ -95,8 +95,6 @@ export const Logos = styled.span`
 	width: 100%;
 	padding-top: 100%;
 	overflow: hidden;
-    height: 80px;
-	background: rgba(0, 0, 0, 0.4);
 `;
 
 export const LogoBox = styled.div`
