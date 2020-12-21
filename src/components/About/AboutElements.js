@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from '../../images/pexels-photo-3612930.jpg';
+import bg from '../../images/backgrounds/pexels-photo-3612930.jpg';
 
 export const AboutContainer = styled.div`
 	background-color: rgba(0,0,0,0.75);
@@ -20,14 +20,13 @@ export const AboutContainer = styled.div`
     "Technologies Technologies Technologies Technologies Technologies Technologies";
     font-size: 2rem;
 
-        @media screen and (max-width: 768px) {
-		font-size: 1.5rem;
-	}
+	@media screen and (max-width: 768px) {
+	font-size: 1.5rem;
+	};
 
 	@media screen and (max-width: 480px) {
 		font-size: 1rem;
-	}
-}
+	};
 `;
 
 export const AboutBg = styled.div`
@@ -119,4 +118,5 @@ export const LogoBox = styled.div`
     @keyframes slide {
         0%   { left:-2%; }
         100% { left:100%; }
+	}
 `;

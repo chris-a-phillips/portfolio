@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { TiArrowLeftOutline, TiArrowRightOutline } from 'react-icons/ti';
-import bg from '../../images/pexels-photo-3612931.jpg';
-import pattern from '../../images/pattern.svg';
-import vortex from '../../images/vortex.svg';
+import bg from '../../images/backgrounds/pexels-photo-3612931.jpg';
+import pattern from '../../images/backgrounds/pattern.svg';
+import vortex from '../../images/backgrounds/vortex.svg';
 import { VscGithub } from 'react-icons/vsc'
 import { GiWireframeGlobe } from 'react-icons/gi';
 
@@ -44,9 +44,7 @@ border-radius: 10px;
 	height: 100%;
 	width: 100%;
 	padding: 10px;
-	/* :active; */
 	background-image: url(${vortex});
-	/* background-attachment: fixed; */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -56,7 +54,6 @@ export const CardImg = styled.img`
 	padding: 20px;
 	width: 100%;
 	height: 60%;
-	/* background-color: red; */
 `;
 
 export const CardTitle = styled.h1`
@@ -87,7 +84,6 @@ export const CardLink = styled.a`
 	color: white;
 	background-color: black;
 	padding: 5px;
-	/* margin: 5%; */
 	text-decoration: none;
 	cursor: none;
 
@@ -96,21 +92,6 @@ export const CardLink = styled.a`
 		border: groove #1aeddc 5px;
 	}
 `;
-// export const CardLink = styled.a`
-// 	border: solid white 5px;
-// 	border-radius: 5px;
-// 	color: white;
-// 	background-color: black;
-// 	padding: 5px;
-// 	/* margin: 5%; */
-// 	text-decoration: none;
-// 	cursor: none;
-
-// 	:hover {
-// 		color: #1aeddc;
-// 		border: groove #1aeddc 5px;
-// 	}
-// `;
 
 // FOCUSES
 
@@ -118,7 +99,6 @@ export const FocusesWrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/* background-color: seagreen; */
 `;
 
 export const FocusBox = styled.div`

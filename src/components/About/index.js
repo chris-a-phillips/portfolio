@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutBg, AboutContainer, Blurb, Head, HeadShot, Logo, LogoBox, Logos, Picture, Technologies } from './AboutElements';
-import headShot from '../../images/headshot.jpeg'
+import headShot from '../../images/media/headshot.jpeg'
 import bootstrap from '../../images/logos/bootstrap-logo.svg'
 import django from '../../images/logos/django-logo.png'
 import javascript from '../../images/logos/javascript-logo.svg'

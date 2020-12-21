@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bg from '../../images/background.jpeg'
+import bg from '../../images/backgrounds/background.jpeg'
 
 export const ContactWrapper = styled.div`
 	height: 500px;

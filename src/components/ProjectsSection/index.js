@@ -9,10 +9,10 @@ import {
 	ProjectsSectionWrapper,
 	FocusH1,
 } from './ProjectsElements';
-import efficiency from '../../images/efficiency.svg';
-import flexibility from '../../images/flexibility.svg';
-import detail from '../../images/detail.svg';
-import creativity from '../../images/creativity.svg';
+import efficiency from '../../images/focus-svgs/efficiency.svg';
+import flexibility from '../../images/focus-svgs/flexibility.svg';
+import detail from '../../images/focus-svgs/detail.svg';
+import creativity from '../../images/focus-svgs/creativity.svg';
 import { showcase } from './CarouselData';
 import { ParallaxSeparator } from '../../pages/PageElements';
 

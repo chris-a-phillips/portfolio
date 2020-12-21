@@ -1,4 +1,3 @@
-// import { logDOM } from '@testing-library/react';
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
@@ -45,10 +44,7 @@ export const HeroH1 = styled.h1`
 	color: #1bcef7;
 	font-size: 4rem;
 	text-align: left;
-	/* border-radius: 100%; */
 	background-color: rgba(0, 0, 0, 0.5);
-	/* filter: contrast(400%); */
-	/* filter: drop-shadow(16px 16px 20px red) invert(75%); */
 
 	@media screen and (max-width: 768px) {
 		font-size: 3.5rem;
@@ -63,7 +59,6 @@ export const HeroH2 = styled.h2`
 	color: #1bcef7;
 	font-size: 3rem;
 	text-align: left;
-	/* filter: contrast(400%); */
 
 	@media screen and (max-width: 768px) {
 		font-size: 2.5rem;
