@@ -27,3 +27,10 @@ export const Cursor = styled.div.attrs(({ top, left }) => ({
 	z-index: 5;
 	backdrop-filter: hue-rotate(120deg);
 `;
+
+export const ParallaxSeparator = styled.div`
+	width: 100%;
+	height: 30px;
+	background-color: #000;
+	color: white;
+`;

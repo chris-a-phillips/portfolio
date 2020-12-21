@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutContainer, Blurb, Head, HeadShot, Logo, LogoBox, Picture, Technologies } from './AboutElements';
+import { AboutBg, AboutContainer, Blurb, Head, HeadShot, Logo, LogoBox, Picture, Technologies } from './AboutElements';
 import headShot from '../../images/headshot.jpeg'
 import bootstrap from '../../images/logos/bootstrap-logo.svg'
 import django from '../../images/logos/django-logo.png'
@@ -9,32 +9,39 @@ import nodeExpress from '../../images/logos/node-express-logo.jpeg'
 import postgresql from '../../images/logos/postgresql-logo.svg'
 import python from '../../images/logos/python-logo.svg'
 import react from '../../images/logos/react-logo.PNG'
+import { ParallaxSeparator } from '../../pages/PageElements';
 
 
 const About = () => {
     return (
-		<AboutContainer id={'about'}>
-            <Head>Looking to make a difference with technology</Head>
-            <Picture><HeadShot src={headShot}/></Picture>
-			<Blurb>
-				I am a full stack software engineer with a passion
-				for bringing people together through technology. I build
-				applications with the end user experience as my focus. With my
-				knowledge of various technologies, I can build applications for a wide range of users.
-			</Blurb>
-            <Technologies>
-				<LogoBox>
-					<Logo src={bootstrap} alt={'bootstrap logo'}/>
-					<Logo src={django} alt={'django logo'}/>
-					<Logo src={javascript} alt={'javascript logo'}/>
-					<Logo src={mongoose} alt={'mongoose logo'}/>
-					<Logo src={nodeExpress} alt={'node express logo'}/>
-					<Logo src={postgresql} alt={'postgresql logo'}/>
-					<Logo src={python} alt={'python logo'}/>
-				<Logo src={react} alt={'react logo'}/>
-				</LogoBox>
-            </Technologies>
-		</AboutContainer>
+		<AboutBg>
+			<AboutContainer id={'about'}>
+				<Head>Looking to make a difference with technology</Head>
+				<Picture>
+					<HeadShot src={headShot} />
+				</Picture>
+				<Blurb>
+					I am a full stack software engineer with a passion for
+					bringing people together through technology. I build
+					applications with the end user experience as my focus. With
+					my knowledge of various technologies, I can build
+					applications for a wide range of users.
+				</Blurb>
+				<Technologies>
+					<LogoBox>
+						<Logo src={bootstrap} alt={'bootstrap logo'} />
+						<Logo src={django} alt={'django logo'} />
+						<Logo src={javascript} alt={'javascript logo'} />
+						<Logo src={mongoose} alt={'mongoose logo'} />
+						<Logo src={nodeExpress} alt={'node express logo'} />
+						<Logo src={postgresql} alt={'postgresql logo'} />
+						<Logo src={python} alt={'python logo'} />
+						<Logo src={react} alt={'react logo'} />
+					</LogoBox>
+				</Technologies>
+			</AboutContainer>
+			<ParallaxSeparator />
+		</AboutBg>
 	);
 };
 

@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { Card, CardCaption, CardLink,CardDescription, CardTitle, CarouselWrapper, CardContainer, CardImg } from './ProjectsElements';
+import { Card, CardCaption, CardLink,CardDescription, CardTitle, CarouselWrapper, CardContainer, CardImg, GithubIcon, WebsiteIcon, SocialIconLink, SocialIcons } from './ProjectsElements';
 import { ArrowLeft, ArrowRight } from './ProjectsElements'
 
 const ProjectsCarousel = ({ showcase }) => {
@@ -24,7 +24,7 @@ const ProjectsCarousel = ({ showcase }) => {
 
 	return (
 		<CarouselWrapper>
-            <ArrowLeft onClick={prevProject}>Previous</ArrowLeft>
+			<ArrowLeft onClick={prevProject}>Previous</ArrowLeft>
 			<CardContainer>
 				<Card>
 					<CardImg
@@ -35,11 +35,21 @@ const ProjectsCarousel = ({ showcase }) => {
 						{showcase[count].description}
 					</CardDescription>
 					<CardCaption>{showcase[count].caption}</CardCaption>
-					<CardLink href={`${showcase[count].link}`}>Github Link
-					</CardLink>
+					<SocialIcons>
+						<SocialIconLink
+							href={`${showcase[count].weblink}`}
+							target='_blank'>
+							<WebsiteIcon />
+						</SocialIconLink>
+						<SocialIconLink
+							href={`${showcase[count].github}`}
+							target='_blank'>
+							<GithubIcon />
+						</SocialIconLink>
+					</SocialIcons>
 				</Card>
 			</CardContainer>
-            <ArrowRight onClick={nextProject}>Next</ArrowRight>
+			<ArrowRight onClick={nextProject}>Next</ArrowRight>
 		</CarouselWrapper>
 	);
 };

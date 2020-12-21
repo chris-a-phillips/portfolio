@@ -1,37 +1,49 @@
 import React from 'react';
-// import { CarouselData } from './CarouselData';
 import ProjectsCarousel from './ProjectsCarousel';
-import { FocusImg, FocusBox, FocusesWrapper,  ProjectsSectionWrapper, FocusH1 } from './ProjectsElements';
-import efficiency from '../../images/efficiency.svg'
-import flexibility from '../../images/flexibility.svg'
-import detail from '../../images/detail.svg'
-import creativity from '../../images/creativity.svg'
+import {
+	FocusImg,
+	FocusBox,
+	FocusesBg,
+	FocusesWrapper,
+	ProjectsBg,
+	ProjectsSectionWrapper,
+	FocusH1,
+} from './ProjectsElements';
+import efficiency from '../../images/efficiency.svg';
+import flexibility from '../../images/flexibility.svg';
+import detail from '../../images/detail.svg';
+import creativity from '../../images/creativity.svg';
 import { showcase } from './CarouselData';
-
+import { ParallaxSeparator } from '../../pages/PageElements';
 
 const Projects = () => {
-    return (
-		<ProjectsSectionWrapper id='projects'>
-			<ProjectsCarousel showcase={showcase}/>
-			<FocusesWrapper>
-				<FocusBox>
-					<FocusImg src={efficiency}/>
-					<FocusH1>Efficiency</FocusH1>
-				</FocusBox>
-				<FocusBox>
-					<FocusImg src={flexibility}/>
-					<FocusH1>Flexibility</FocusH1>
-				</FocusBox>
-				<FocusBox>
-					<FocusImg src={detail}/>
-					<FocusH1>Attention To Detail</FocusH1>
-				</FocusBox>
-				<FocusBox>
-					<FocusImg src={creativity}/>
-					<FocusH1>Creativity</FocusH1>
-				</FocusBox>
-			</FocusesWrapper>
-		</ProjectsSectionWrapper>
+	return (
+		<ProjectsBg>
+			<ProjectsSectionWrapper id='projects'>
+				<ProjectsCarousel showcase={showcase} />
+				<FocusesBg>
+					<FocusesWrapper>
+						<FocusBox>
+							<FocusImg src={efficiency} />
+							<FocusH1>Efficiency</FocusH1>
+						</FocusBox>
+						<FocusBox>
+							<FocusImg src={flexibility} />
+							<FocusH1>Flexibility</FocusH1>
+						</FocusBox>
+						<FocusBox>
+							<FocusImg src={detail} />
+							<FocusH1>Attention To Detail</FocusH1>
+						</FocusBox>
+						<FocusBox>
+							<FocusImg src={creativity} />
+							<FocusH1>Creativity</FocusH1>
+						</FocusBox>
+					</FocusesWrapper>
+				</FocusesBg>
+			</ProjectsSectionWrapper>
+			<ParallaxSeparator />
+		</ProjectsBg>
 	);
 };
 

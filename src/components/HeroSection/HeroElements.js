@@ -42,11 +42,11 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
 	margin-top: 35%;
-	color: #82c0cc;
+	color: #1bcef7;
 	font-size: 4rem;
 	text-align: left;
 	/* border-radius: 100%; */
-	background-color: rgba(0,0,0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	/* filter: contrast(400%); */
 	/* filter: drop-shadow(16px 16px 20px red) invert(75%); */
 
@@ -60,7 +60,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroH2 = styled.h2`
-	color: #cc92c2;
+	color: #1bcef7;
 	font-size: 3rem;
 	text-align: left;
 	/* filter: contrast(400%); */
@@ -76,12 +76,12 @@ export const HeroH2 = styled.h2`
 
 export const HeroP = styled.p`
 	margin-top: 3rem;
-	color: #2a9d8f;
+	color: #1aeddc;
 	font-size: 2rem;
 	text-align: left;
 	max-width: 600px;
 	background-color: rgba(0, 0, 0, 0.6);
-	/* filter: contrast(400%); */
+	filter: contrast(400%);
 
 	@media screen and (max-width: 768px) {
 		font-size: 1.5rem;

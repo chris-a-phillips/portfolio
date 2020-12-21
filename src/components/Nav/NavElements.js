@@ -28,10 +28,11 @@ export const NavbarContainer = styled.div`
 	width: 100%;
 	padding: 0 24px;
 	max-width: 1100px;
+	color: #1bcef7;
 `;
 
 export const NavLogo = styled(LinkR)`
-	color: #fff;
+	color: #1bcef7;
 	justify-self: flex-start;
 	cursor: none;
 	font-size: 1.5 rem;
@@ -45,11 +46,11 @@ export const NavLogo = styled(LinkR)`
 		transition: 0.5s ease-in-out;
 		transform: scale(1.5);
 	}
-	`;
+`;
 
 export const MobileIcon = styled.div`
 	display: none;
-	
+
 	@media screen and (max-width: 768px) {
 		display: block;
 		position: absolute;
@@ -58,16 +59,16 @@ export const MobileIcon = styled.div`
 		transform: translate(-100%, 60%);
 		font-size: 1.8rem;
 		cursor: none;
-		color: #fff;
 		width: 25px;
 		z-index: 2;
+		fill: #1bcef7;
 
 		&:hover {
-			transition: 0.5s linear;
-			/* transform: scale(1.5); */
+			filter: drop-shadow(16px 16px 20px red) invert(75%);
+			transition: 0.3s linear;
 		}
 	}
-	`;
+`;
 
 export const NavMenu = styled.ul`
 	display: flex;
@@ -75,36 +76,34 @@ export const NavMenu = styled.ul`
 	list-style: none;
 	text-align: center;
 	margin-right: 22px;
-	
+
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
-	`;
+`;
 
 export const NavItem = styled.li`
 	height: 80px;
-	`;
+`;
 
 export const NavLinks = styled(LinkS)`
-	color: #fff;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	padding: 0 1rem;
 	height: 100%;
 	cursor: none;
-	
+
 	&:hover {
 		transition: all 0.2s ease-in-out;
-		background: #fff;
-		color: #010606;
 		transform: scale(1.5);
 	}
 
 	&.active {
 		// color of navbar button highlight
-		border-bottom: 3px solid #01bf71;
+		border-bottom: 3px solid #1aeddc;
 	}
+	color: #1aeddc;
 `;
 
 export const NavBtn = styled.nav`
@@ -118,10 +117,9 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
 	border-radius: 50px;
-	background: #01bf71;
+	background: #1aeddc;
 	white-space: nowrap;
 	padding: 10px 22px;
-	color: #010606;
 	font-size: 16px;
 	outline: none;
 	border: none;
@@ -131,7 +129,7 @@ export const NavBtnLink = styled(LinkR)`
 
 	&:hover {
 		transition: all 0.2s ease-in-out;
-		background: #fff;
 		color: #010606;
+		transform: scale(1.5);
 	}
 `;
