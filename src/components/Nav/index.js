@@ -13,6 +13,7 @@ import {
 	NavBtn,
 	NavBtnLink,
 } from './NavElements';
+import Pdf from '../../documents/Chris Phillips Resume.pdf'
 
 const Navbar = ({ toggle }) => {
 	const [scrollNav, setScrollNav] = useState(false);
@@ -80,9 +81,10 @@ const Navbar = ({ toggle }) => {
 								</NavLinks>
 							</NavItem>
 						</NavMenu>
-						{/* link to external page (will probably be contact page) */}
 						<NavBtn>
-							<NavBtnLink to='/resume'>Resume</NavBtnLink>
+							<NavBtnLink href={Pdf} target='_blank'>
+								Resume
+							</NavBtnLink>
 						</NavBtn>
 					</NavbarContainer>
 				</Nav>
