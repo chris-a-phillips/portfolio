@@ -5,7 +5,6 @@ import Nav from '../components/Nav';
 import Hero from '../components/HeroSection';
 import Projects from '../components/ProjectsSection';
 import Sidebar from '../components/Sidebar'
-import Resume from '../components/Resume';
 import { Cursor } from './PageElements'
 import Contact from '../components/Contact';
 
