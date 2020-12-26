@@ -76,6 +76,7 @@ export const Technologies = styled.div`
 	grid-area: Technologies;
 	width: 100%;
 	height: 90%;
+	padding: 10px;
 	margin: 20px auto;
 `;
 
@@ -94,7 +95,6 @@ export const Logos = styled.span`
 	display: block;
 	width: 100%;
 	padding-top: 100%;
-	overflow: hidden;
 `;
 
 export const LogoBox = styled.div`
