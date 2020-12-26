@@ -1,11 +1,12 @@
 import React from 'react';
-import { SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements'
+import { CloseIcon, SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements'
 import Pdf from '../../documents/Chris Phillips Resume.pdf'
 
 const Sidebar = ({ isOpen, toggle }) => {
 	return (
 		<SidebarContainer isOpen={isOpen} onClick={toggle}>
 			<Icon onClick={toggle}>
+				<CloseIcon />
 			</Icon>
 			<SidebarWrapper>
 				<SidebarMenu>

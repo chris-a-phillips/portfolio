@@ -28,7 +28,6 @@ const Navbar = ({ toggle }) => {
 
 	const toggleHome = () => {
 		scroll.scrollToTop();
-		toggle()
 	};
 
 	useEffect(() => {
@@ -41,7 +40,7 @@ const Navbar = ({ toggle }) => {
 				<Nav scrollNav={scrollNav}>
 					<NavbarContainer>
 						<NavLogo to='/' onClick={toggleHome}>
-							Favicon
+							Chris Phillips
 						</NavLogo>
 						<MobileIcon onClick={toggle}>
 							<FaBars />
