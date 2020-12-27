@@ -3,7 +3,6 @@ import ProjectsCarousel from './ProjectsCarousel';
 import {
 	FocusImg,
 	FocusBox,
-	FocusesBg,
 	FocusesWrapper,
 	ProjectsBg,
 	ProjectsSectionWrapper,
@@ -21,7 +20,6 @@ const Projects = () => {
 		<ProjectsBg>
 			<ProjectsSectionWrapper id='projects'>
 				<ProjectsCarousel showcase={showcase} />
-				<FocusesBg>
 					<FocusesWrapper>
 						<FocusBox>
 							<FocusImg src={efficiency} />
@@ -40,7 +38,6 @@ const Projects = () => {
 							<FocusH1>Creativity</FocusH1>
 						</FocusBox>
 					</FocusesWrapper>
-				</FocusesBg>
 			</ProjectsSectionWrapper>
 			<ParallaxSeparator />
 		</ProjectsBg>

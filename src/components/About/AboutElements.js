@@ -2,31 +2,41 @@ import styled from 'styled-components';
 import bg from '../../images/backgrounds/pexels-photo-3612930.jpg';
 
 export const AboutContainer = styled.div`
-	background-color: rgba(0,0,0,0.75);
-    height: 860px;
-    width: 100%;
-    display: grid;
-    color: #1aeddc;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px 5px;
-    grid-template-areas:
-    "Head Head Head Blurb Blurb Blurb"
-    "Picture Picture . Blurb Blurb Blurb"
-    "Picture Picture . Blurb Blurb Blurb"
-    ". . . . . ."
-    "Technologies Technologies Technologies Technologies Technologies Technologies"
-    "Technologies Technologies Technologies Technologies Technologies Technologies";
-    font-size: 2rem;
+	background-color: rgba(0, 0, 0, 0.75);
+	height: 800px;
+	width: 100%;
+	display: grid;
+	color: #1aeddc;
+	text-align: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 5px 5px;
+	grid-template-areas:
+		'Head Head Head Blurb Blurb Blurb'
+		'Picture Picture . Blurb Blurb Blurb'
+		'Picture Picture . Blurb Blurb Blurb'
+		'. . . . . .'
+		'Technologies Technologies Technologies Technologies Technologies Technologies'
+		'Technologies Technologies Technologies Technologies Technologies Technologies';
+	font-size: 2rem;
 
 	@media screen and (max-width: 768px) {
-	font-size: 1.5rem;
-	};
+		font-size: 1.5rem;
+	}
 
 	@media screen and (max-width: 480px) {
 		font-size: 1rem;
-	};
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 5px 5px;
+		grid-template-areas:
+			'. . . . . .'
+			'Head Head Head Blurb Blurb Blurb'
+			'Picture Picture . Blurb Blurb Blurb'
+			'Picture Picture . Blurb Blurb Blurb'
+			'Technologies Technologies Technologies Technologies Technologies Technologies'
+			'Technologies Technologies Technologies Technologies Technologies Technologies';
+	} ;
 `;
 
 export const AboutBg = styled.div`
@@ -54,17 +64,25 @@ export const Head = styled.div`
 
 export const Picture = styled.div`
 	grid-area: Picture;
-	margin: 10%;
-	height: 80%;
-	width: 80%;
+	margin: 0 40%;
+	height: 65%;
+	width: 65%;
 	display: grid;
 	place-items: center;
 	border-radius: 10px;
+
+	@media screen and (max-width: 768) {
+		height: 80%;
+		width: 80%;
+	}
 `;
 
 export const Blurb = styled.div`
 	grid-area: Blurb;
 	margin: 10%;
+	@media screen and (max-width: 768) {
+		font-size: 0.75rem;
+	}
 `;
 
 export const HeadShot = styled.img`
@@ -88,12 +106,22 @@ export const Logo = styled.img`
 	:hover {
 		transform: scale(1.5);
 	}
+
+	@media screen and (max-width: 768px) {
+		width: 60px;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 30px;
+		margin: -50px 0 0 0;
+	}
 `;
 
-export const Logos = styled.span`
+export const Logos = styled.div`
 	position: relative;
 	display: block;
-	width: 100%;
+	margin: auto 10%;
+	width: 80%;
 	padding-top: 100%;
 `;
 
@@ -116,5 +144,14 @@ export const LogoBox = styled.div`
     @keyframes slide {
         0%   { left:-2%; }
         100% { left:100%; }
+	}
+
+
+	@media screen and (max-width: 768px) {
+
+	}
+
+	@media screen and (max-width: 480px) {
+
 	}
 `;

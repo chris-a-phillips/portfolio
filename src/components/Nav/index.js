@@ -12,8 +12,10 @@ import {
 	NavLinks,
 	NavBtn,
 	NavBtnLink,
+	Favicon,
 } from './NavElements';
 import Pdf from '../../documents/Chris Phillips Resume.pdf'
+import favicon from '../../images/media/Solar System.png'
 
 const Navbar = ({ toggle }) => {
 	const [scrollNav, setScrollNav] = useState(false);
@@ -40,6 +42,7 @@ const Navbar = ({ toggle }) => {
 				<Nav scrollNav={scrollNav}>
 					<NavbarContainer>
 						<NavLogo to='/' onClick={toggleHome}>
+						<Favicon src ={favicon}/>
 							Chris Phillips
 						</NavLogo>
 						<MobileIcon onClick={toggle}>
