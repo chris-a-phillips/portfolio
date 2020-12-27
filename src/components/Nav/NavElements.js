@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
+
+export const Favicon = styled.img`
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+`
+
 export const Nav = styled.nav`
 	background: ${({ scrollNav }) =>
 		scrollNav ? 'rgba(0,0,0, 0.6)' : 'transparent'};
@@ -35,7 +42,7 @@ export const NavLogo = styled(LinkR)`
 	color: #1bcef7;
 	justify-self: flex-start;
 	cursor: none;
-	font-size: 1.5 rem;
+	font-size: 1.5rem;
 	display: flex;
 	align-items: center;
 	margin-left: 24px;
@@ -44,7 +51,7 @@ export const NavLogo = styled(LinkR)`
 
 	&:hover {
 		transition: 0.5s ease-in-out;
-		transform: scale(1.5);
+		transform: scale(1.25);
 	}
 `;
 
