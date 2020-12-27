@@ -88,12 +88,21 @@ export const Logo = styled.img`
 	:hover {
 		transform: scale(1.5);
 	}
+
+	@media screen and (max-width: 768px) {
+		width: 50px;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 25px;
+	}
 `;
 
-export const Logos = styled.span`
+export const Logos = styled.div`
 	position: relative;
 	display: block;
-	width: 100%;
+	margin: auto 10%;
+	width: 80%;
 	padding-top: 100%;
 `;
 
@@ -117,4 +126,14 @@ export const LogoBox = styled.div`
         0%   { left:-2%; }
         100% { left:100%; }
 	}
+
+
 `;
+
+	// @media screen and (max-width: 768px) {
+
+	// }
+
+	// @media screen and (max-width: 480px) {
+
+	// }

@@ -13,6 +13,22 @@ export const ProjectsSectionWrapper = styled.div`
 	height: 860px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.75);
+
+	@media screen and (max-width: 768px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		gap: 0px 0px;
+		grid-template-areas:
+			'Carousel Carousel Carousel Carousel Carousel Carousel'
+			'Carousel Carousel Carousel Carousel Carousel Carousel'
+			'Carousel Carousel Carousel Carousel Carousel Carousel'
+			'Focuses Focuses Focuses Focuses Focuses Focuses';
+	}
+
+	@media screen and (max-width: 480px) {
+		
+	}
 `;
 
 export const CarouselWrapper = styled.div`
@@ -21,6 +37,10 @@ export const CarouselWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media screen and (max-width: 768px) {
+		grid-area: Carousel;
+	}
 `;
 
 export const CardContainer = styled.div`
@@ -37,10 +57,21 @@ export const CardContainer = styled.div`
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@media screen and (max-width: 768px) {
+
+	}
+
+	@media screen and (max-width: 480px) {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+	}
 `;
 
 export const Card = styled.div`
-border-radius: 10px;
+	border-radius: 10px;
 	height: 100%;
 	width: 100%;
 	padding: 10px;
@@ -54,12 +85,16 @@ export const CardImg = styled.img`
 	padding: 20px;
 	width: 100%;
 	height: 60%;
+	aspect-ratio: 16 / 9;
 `;
 
 export const CardTitle = styled.h1`
 	border: solid white 5px;
 	border-radius: 5px;
 	color: #fff;
+	@media screen and (max-width: 768px) {
+		font-size: 2rem;
+	}
 `;
 
 export const CardCaption = styled.h3`
@@ -96,9 +131,26 @@ export const CardLink = styled.a`
 // FOCUSES
 
 export const FocusesWrapper = styled.div`
+	background-image: url(${pattern});
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	@media screen and (max-width: 768px) {
+		grid-area: Focuses;
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+		padding-top: 5%;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding-top: 17%;
+	}
 `;
 
 export const FocusBox = styled.div`
@@ -119,6 +171,9 @@ export const FocusH1 = styled.h1`
 	@media screen and (max-width: 768px) {
 		font-size: 1rem;
 	}
+	@media screen and (max-width: 480px) {
+		font-size: 0.75rem;
+	}
 `;
 
 export const FocusImg = styled.img`
@@ -127,8 +182,8 @@ export const FocusImg = styled.img`
 	height: 100px;
 
 	@media screen and (max-width: 768px) {
-		height: 75px;
-		width: 75px;
+		height: 45px;
+		width: 45px;
 	}
 `;
 
