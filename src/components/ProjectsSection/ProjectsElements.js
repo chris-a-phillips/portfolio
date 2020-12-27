@@ -25,10 +25,6 @@ export const ProjectsSectionWrapper = styled.div`
 			'Carousel Carousel Carousel Carousel Carousel Carousel'
 			'Focuses Focuses Focuses Focuses Focuses Focuses';
 	}
-
-	@media screen and (max-width: 480px) {
-		
-	}
 `;
 
 export const CarouselWrapper = styled.div`
@@ -58,15 +54,10 @@ export const CardContainer = styled.div`
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	@media screen and (max-width: 768px) {
-
-	}
-
 	@media screen and (max-width: 480px) {
 		margin: 0;
 		padding: 0;
-		height: 100%;
-		width: 100%;
+		height: 70%;
 	}
 `;
 
@@ -86,6 +77,11 @@ export const CardImg = styled.img`
 	width: 100%;
 	height: 60%;
 	aspect-ratio: 16 / 9;
+
+	@media screen and (max-width: 480px) {
+		width: 100%;
+		height: 40%;
+	}
 `;
 
 export const CardTitle = styled.h1`
