@@ -3,7 +3,7 @@ import bg from '../../images/backgrounds/pexels-photo-3612930.jpg';
 
 export const AboutContainer = styled.div`
 	background-color: rgba(0, 0, 0, 0.75);
-	height: 860px;
+	height: 800px;
 	width: 100%;
 	display: grid;
 	color: #1aeddc;
@@ -64,17 +64,25 @@ export const Head = styled.div`
 
 export const Picture = styled.div`
 	grid-area: Picture;
-	margin: 10%;
-	height: 80%;
-	width: 80%;
+	margin: 0 40%;
+	height: 65%;
+	width: 65%;
 	display: grid;
 	place-items: center;
 	border-radius: 10px;
+
+	@media screen and (max-width: 768) {
+		height: 80%;
+		width: 80%;
+	}
 `;
 
 export const Blurb = styled.div`
 	grid-area: Blurb;
 	margin: 10%;
+	@media screen and (max-width: 768) {
+		font-size: 0.75rem;
+	}
 `;
 
 export const HeadShot = styled.img`
