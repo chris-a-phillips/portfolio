@@ -19,7 +19,7 @@ export const Cursor = styled.div.attrs(({ top, left }) => ({
     position: absolute;
     transform: translate(-50%,-50%);
 	pointer-events: none;
-	z-index: 5;
+	z-index: 4;
 	backdrop-filter: hue-rotate(120deg);
 `;
 
