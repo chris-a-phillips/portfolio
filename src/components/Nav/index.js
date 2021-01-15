@@ -14,7 +14,7 @@ import {
 	NavBtnLink,
 	Favicon,
 } from './NavElements';
-import Pdf from '../../documents/Chris Phillips Resume.pdf'
+// import Pdf from '../../documents/Chris Phillips Resume.pdf'
 import favicon from '../../images/media/Solar System.png'
 
 const Navbar = ({ toggle }) => {
@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
 				<Nav scrollNav={scrollNav}>
 					<NavbarContainer>
 						<NavLogo to='/' onClick={toggleHome}>
-						<Favicon src ={favicon}/>
+						<Favicon src={favicon}/>
 							Chris Phillips
 						</NavLogo>
 						<MobileIcon onClick={toggle}>
@@ -84,7 +84,9 @@ const Navbar = ({ toggle }) => {
 							</NavItem>
 						</NavMenu>
 						<NavBtn>
-							<NavBtnLink href={Pdf} target='_blank'>
+							<NavBtnLink 
+							// href={Pdf} target='_blank'
+							>
 								Resume
 							</NavBtnLink>
 						</NavBtn>
