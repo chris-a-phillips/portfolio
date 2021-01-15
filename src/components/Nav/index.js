@@ -14,7 +14,7 @@ import {
 	NavBtnLink,
 	Favicon,
 } from './NavElements';
-// import Pdf from '../../documents/Chris Phillips Resume.pdf'
+import Pdf from '../../documents/Chris Phillips Resume.pdf'
 import favicon from '../../images/media/Solar System.png'
 
 const Navbar = ({ toggle }) => {
@@ -85,7 +85,7 @@ const Navbar = ({ toggle }) => {
 						</NavMenu>
 						<NavBtn>
 							<NavBtnLink 
-							// href={Pdf} target='_blank'
+							href={Pdf} target='_blank'
 							>
 								Resume
 							</NavBtnLink>
