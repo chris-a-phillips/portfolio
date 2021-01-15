@@ -1,6 +1,6 @@
 import React from 'react';
 import { CloseIcon, SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements'
-import Pdf from '../../documents/Chris Phillips Resume.pdf'
+// import Pdf from '../../documents/Chris Phillips Resume.pdf'
 
 const Sidebar = ({ isOpen, toggle }) => {
 	return (
@@ -21,7 +21,9 @@ const Sidebar = ({ isOpen, toggle }) => {
 					</SidebarLink>
 				</SidebarMenu>
 				<SideBtnWrap>
-					<SidebarRoute href={Pdf} target='_blank'>Resume</SidebarRoute>
+					<SidebarRoute 
+					// href={Pdf} target='_blank'
+					>Resume</SidebarRoute>
 				</SideBtnWrap>
 			</SidebarWrapper>
 		</SidebarContainer>
