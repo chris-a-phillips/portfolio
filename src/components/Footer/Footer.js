@@ -8,7 +8,7 @@ import {
 	SocialIconLink,
 	FooterContainer, 
 	SocialIcons,
-} from './FooterElements';
+} from './SCFooter';
 
 
 const Footer = () => {

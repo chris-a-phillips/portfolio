@@ -1,6 +1,6 @@
 import React from 'react';
 import Video from '../../videos/video.mp4'
-import { HeroBg, HeroContainer, HeroContent, HeroH1, HeroH2, HeroP, VideoBg } from './HeroElements';
+import { HeroBg, HeroContainer, HeroContent, HeroH1, HeroH2, HeroP, VideoBg } from './SCHeroSection';
 
 const Hero = () => {
     return (

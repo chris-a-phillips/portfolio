@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactA, ContactBg, ContactH1, ContactH3, ContactWrapper } from './ContactElements';
+import { ContactA, ContactBg, ContactH1, ContactH3, ContactWrapper } from './SCAbout';
 
 
 const Contact = () => {

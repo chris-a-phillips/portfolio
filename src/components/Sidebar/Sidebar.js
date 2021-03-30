@@ -1,5 +1,5 @@
 import React from 'react';
-import { CloseIcon, SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements'
+import { CloseIcon, SidebarContainer, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SCSidebar'
 import Pdf from '../../documents/Chris Phillips Resume.pdf'
 
 const Sidebar = ({ isOpen, toggle }) => {

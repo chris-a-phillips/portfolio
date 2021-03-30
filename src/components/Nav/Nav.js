@@ -13,7 +13,7 @@ import {
 	NavBtn,
 	NavBtnLink,
 	Favicon,
-} from './NavElements';
+} from './SCNav';
 import Pdf from '../../documents/Chris Phillips Resume.pdf'
 import favicon from '../../images/media/Solar System.png'
 
