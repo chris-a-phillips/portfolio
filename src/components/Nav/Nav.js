@@ -42,8 +42,7 @@ const Navbar = ({ toggle }) => {
 				<Nav scrollNav={scrollNav}>
 					<NavbarContainer>
 						<NavLogo to='/' onClick={toggleHome}>
-						<Favicon src={favicon}/>
-							Chris Phillips
+							CP
 						</NavLogo>
 						<MobileIcon onClick={toggle}>
 							<FaBars />
