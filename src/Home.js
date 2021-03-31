@@ -1,12 +1,12 @@
 import { React, useState, useEffect } from 'react';
-import About from '../components/About/About';
-import Footer from '../components/Footer/Footer';
-import Nav from '../components/Nav/Nav';
-import Hero from '../components/HeroSection/HeroSection';
-import Projects from '../components/ProjectsSection';
-import Sidebar from '../components/Sidebar/Sidebar'
-import { Cursor } from './PageElements'
-import Contact from '../components/Contact/Contact';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+import Nav from './components/Nav/Nav';
+import Hero from './components/HeroSection/HeroSection';
+import Projects from './components/ProjectsSection';
+import Sidebar from './components/Sidebar/Sidebar'
+import { Cursor, PageWrapper } from './SCApp'
+import Contact from './components/Contact/Contact';
 
 const Home = () => {
 	const [top, setTop] = useState()
@@ -27,7 +27,7 @@ const Home = () => {
 	}
 
 	return (
-		<div>
+		<PageWrapper>
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Cursor top={top} left={left} />
 			<Nav toggle={toggle} />
@@ -36,7 +36,7 @@ const Home = () => {
 			<Projects />
 			<Contact />
 			<Footer />
-		</div>
+		</PageWrapper>
 	);
 };
 

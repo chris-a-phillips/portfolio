@@ -9,7 +9,7 @@ import nodeExpress from '../../images/logos/node-express-logo.jpeg'
 import postgresql from '../../images/logos/postgresql-logo.svg'
 import python from '../../images/logos/python-logo.svg'
 import react from '../../images/logos/react-logo.PNG'
-import { ParallaxSeparator } from '../../pages/PageElements';
+import { ParallaxSeparator } from '../../SCApp';
 
 
 const About = () => {

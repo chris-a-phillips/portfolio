@@ -13,7 +13,7 @@ import flexibility from '../../images/focus-svgs/flexibility.svg';
 import detail from '../../images/focus-svgs/detail.svg';
 import creativity from '../../images/focus-svgs/creativity.svg';
 import { showcase } from './CarouselData';
-import { ParallaxSeparator } from '../../pages/PageElements';
+import { ParallaxSeparator } from '../../SCApp';
 
 const Projects = () => {
 	return (

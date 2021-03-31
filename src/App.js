@@ -1,13 +1,12 @@
-import './App.css';
 import { React } from 'react'
-import Home from './pages';
-import { PageWrapper } from './pages/PageElements';
+import Home from './Home';
+import { PageWrapper } from './SCApp';
 
 function App() {
 	return (
-			<PageWrapper>
-				<Home />
-			</PageWrapper>
+		<PageWrapper>
+			<Home />
+		</PageWrapper>
 	);
 }
 
